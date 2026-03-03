@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bokul Infra Private Limited</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Modern Professional Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #2f343a; /* light-dark base */
+    color: #e6e6e6;
+    position: relative;
+}
+
+/* WATERMARK BACKGROUND */
+body::before {
+    content: "";
+    background: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") no-repeat center center/cover;
+    opacity: 0.22; /* more visible watermark */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #3a3f46, #2c3136);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+header img {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #cfd8dc;
+}
+
+header p {
+    font-size: 18px;
+    color: #b0bec5;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-left: 4px solid #90a4ae;
+    padding-left: 12px;
+    color: #eceff1;
+}
+
+/* CARD */
+.card {
+    background: rgba(0,0,0,0.55);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(0,0,0,0.75);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #25292e;
+    color: #b0bec5;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1f8f4e;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    animation: pulse 2s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes slideUp {
+    from {transform:translateY(40px); opacity:0;}
+    to {transform:translateY(0); opacity:1;}
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header h1 { font-size: 28px; }
+    .section-title { font-size: 22px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" alt="Company Logo">
+<h1>Bokul Infra Private Limited</h1>
+<p>Construction | Government Projects | Infrastructure Development</p>
+</header>
+
+<section>
+<h2 class="section-title">About Company</h2>
+<div class="card">
+<p>Bokul Infra Private Limited is a professional construction and infrastructure company based in Guwahati. We specialize in civil construction, railway works, and government tender projects.</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Our Services</h2>
+
+<div class="card">
+<h3>Government Tender Projects</h3>
+<p>Execution of state and central government infrastructure contracts.</p>
+</div>
+
+<div class="card">
+<h3>Railway Construction Work</h3>
+<p>Platform construction, structural development, and railway civil engineering.</p>
+</div>
+
+<div class="card">
+<h3>Road & Building Construction</h3>
+<p>Complete infrastructure solutions including road and building projects.</p>
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Office Address</h2>
+<div class="card">
+<p>Adil Shah Path, North Jalukbari, Guwahati-14, Assam, India</p>
+</div>
+</section>
+
+<footer>
+© 2026 Bokul Infra Private Limited | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918099338699" target="_blank">
+Chat on WhatsApp
+</a>
+
+</body>
+</html>
